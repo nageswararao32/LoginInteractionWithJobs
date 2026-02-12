@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Dashboard from './COMPONENTS/Dashboard';
-import LoginPage from './COMPONENTS/Loginpage';
-
+import LoginPage from './COMPONENTS/LoginPage';
 
 // Main App Component
 export default function App() {
