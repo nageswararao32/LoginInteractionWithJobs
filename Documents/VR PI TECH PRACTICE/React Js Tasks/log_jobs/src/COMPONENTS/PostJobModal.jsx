@@ -10,6 +10,7 @@ const PostJobModal = ({ onClose, onSubmit }) => {
         type: 'Remote',
         duration: 'Full-Time',
         salary: '',
+        experience: '0-1',
         description: '',
         skills: ''
     });
@@ -115,6 +116,24 @@ const PostJobModal = ({ onClose, onSubmit }) => {
                                     <option>Internship</option>
                                 </select>
                             </div>
+                        </div>
+
+                        <div>
+                            <label className="block text-sm font-semibold text-gray-700 mb-2">Experience Required *</label>
+                            <select
+                                value={formData.experience}
+                                onChange={(e) => setFormData({ ...formData, experience: e.target.value })}
+                                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-200 bg-white"
+                            >
+                                <option value="0-1">Fresher (0-1 years)</option>
+                                <option value="1-2">Entry Level (1-2 years)</option>
+                                <option value="2-3">Junior (2-3 years)</option>
+                                <option value="3-5">Mid Level (3-5 years)</option>
+                                <option value="5-8">Senior (5-8 years)</option>
+                                <option value="8-10">Lead (8-10 years)</option>
+                                <option value="10-15">Principal (10-15 years)</option>
+                                <option value="15+">Expert (15+ years)</option>
+                            </select>
                         </div>
 
                         <div>
